@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "tsc",
+            "isBuildCommand": true,
+            "windows": {
+                "command": "${workspaceRoot}\\scripts\\build.bat"
+            }
+        },
+        {
+            "taskName": "mshta",
+            "windows": {
+                "command": "${workspaceRoot}\\scripts\\run.bat"
+            }
+        }
+    ]
+}
