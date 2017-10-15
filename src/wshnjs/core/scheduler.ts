@@ -4,7 +4,7 @@ namespace WshNjs {
         id: number;
         enabled: boolean;
         callback: any;
-        constructor(callback: any) {
+        constructor(callback?: any) {
             WshNjs.Task.last_id++;
             this.id = WshNjs.Task.last_id;
             this.enabled = true;
